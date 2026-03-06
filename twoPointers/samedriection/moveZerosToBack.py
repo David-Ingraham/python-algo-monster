@@ -1,29 +1,16 @@
-#move all zeros to bakc of list while aminting relative order of non zero elements 
+arr = [0,2,2,0,5,5,5,0,0,3,0,0,0]
+s= 0
+for f in range(len(arr)):
+	
+	if arr[f] != 0:
 
-
-
-#question for next time you look at this:
-
-#excatly one charecter is off here. find and fix it 
-
-input = [0,0,0,1,0,2,0,0,0,7,0,0]
-print(f"pre processed: {input}")
-f = 0
-
-s = 0
-
-while f < len(input) -1:
-
-	f = f +1
-
-	if input[f] == 0:
-		input[s], input[f] = input[f], input[s]
+		arr[s], arr[f] = arr[f], arr[s]
+			
 		s = s +1
 
-	
+
+		
+print(arr)
 
 
-print(f'post processing: {input}')
-
-
-
+print(arr)	
