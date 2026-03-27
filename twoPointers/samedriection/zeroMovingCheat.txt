@@ -1,0 +1,1 @@
+changing check for zero , != vs == either moves them back or front
