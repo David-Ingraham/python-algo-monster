@@ -16,7 +16,7 @@ def alindPrint(arr): #arr: List[int], func returns String
 	#	print(res)
 	res = res[:-num_wht_spc]
 	#print(res)
-	res = res[:-1]
+	res = res[:-2]
 	res = res + "]"
 	#print(res)
 	return f"{str(arr)}\n{res}"
