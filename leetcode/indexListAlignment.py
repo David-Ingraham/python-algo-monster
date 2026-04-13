@@ -7,13 +7,13 @@ basically a right padding added based on num length
 [0, 1,   2,  3,    4, 5 ]
 """
 arr = [1,33,45,3,4556,2,399]
-
+#limitation: list must be 10 values or fewer
 def alindPrint(arr): #arr: List[int], func returns String
 	res = "["
 	for i in range(len(arr)):
 		num_wht_spc = len(str(arr[i])) - 1
 		res = res + str(i) + ", " + (" " * num_wht_spc)
-	#	print(res)
+#		print(res)
 	res = res[:-num_wht_spc]
 	#print(res)
 	res = res[:-2]
@@ -21,4 +21,6 @@ def alindPrint(arr): #arr: List[int], func returns String
 	#print(res)
 	return f"{str(arr)}\n{res}"
 
-print(alindPrint(arr))
+#print(alindPrint(arr))
+
+
