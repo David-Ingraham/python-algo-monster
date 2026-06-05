@@ -1,0 +1,14 @@
+class Solution:
+    def diagonalSum(self, mat: List[List[int]]) -> int:
+        prim_sum = 0
+        sec_sum = 0
+        for i in range(len(mat)):
+            prim_sum = prim_sum + mat[i][i]
+            sec_sum = sec_sum + mat[i][len(mat)-1-i]
+        res = prim_sum + sec_sum
+        if len(mat) % 2 != 0:
+            res = res - mat[len(mat) // 2][len(mat) // 2]
+        return res
+
+
+
